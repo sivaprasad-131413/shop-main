@@ -1,0 +1,572 @@
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Montserrat', serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Montserrat'
+}
+nav {
+  background: white;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+  border-bottom: 2px solid green;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.logo {
+
+  padding-top: 8px;
+  padding-left: 20px;
+}
+
+
+nav ul {
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
+  margin-top: 28px;
+  font-size: 20px;
+  float: right;
+
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: orange;
+  font-size: 17px;
+  padding-bottom: 3px;
+  padding-top: 12px ;
+  padding-left:12px;
+  padding-right: 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+nav ul li a.active {
+  border-bottom: 3px solid orange;
+}
+
+a.active, a:hover {
+  background: white;
+  transition: .5s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: green;
+  float: right;
+  line-height: 100px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  height: 50px;
+}
+
+#check {
+  display: none;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: Orange;
+  text-align: center;
+  padding: 12px 10px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #FFA33E;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 952px) {
+  .logo {
+    font-size: 30px;
+    padding-left: 10px;
+    height: 90px;
+    width: 180px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+    font-size: 30px;
+    height: 40px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 80px;
+    left: -100%;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 19px 0;
+    line-height: 19px;
+  }
+
+  li.dropdown {
+    margin: 19px 0;
+    line-height: 19px;
+    margin-top: 0px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a.active {
+    background: none;
+    color: black;
+  }
+
+  #check:checked~ul {
+    left: 0;
+    z-index: 1;
+  }
+}
+
+
+/*---common---*/
+
+.heading{
+  text-align: center;
+  padding-top: 60px;
+
+}
+
+/*---sec-sec---*/
+
+.sec-sec{
+
+}
+.rate{
+  margin-top: 5px;
+}
+.row-row{
+  padding:0px 3px;
+}
+.container
+{
+  padding:30px 0px;
+  text-align: center;
+}
+.categories{
+  padding-top: 40px;
+  padding-left:0px;
+  padding-right:0px;
+  padding-bottom: 0px;
+
+}
+
+.cate-width{
+  padding:3%;
+}
+.cate-width a {
+    display: block;
+    position: relative;
+}
+.images{
+  vertical-align: middle;
+  display:block;
+  height:auto;
+  max-width:100%;
+  border-radius:15px;
+
+}
+.overlay {
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: .6;
+    border-radius:15px;
+  }
+  a.text-white {
+    color: #fff;
+}
+h3.cate-text{
+color: #fff;
+    text-align: center;
+    font-size: 20px;
+    /* font-weight: bold; */
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box{
+ background-color:beige;
+ color:black;
+ border-color: 1px solid green;
+  border-radius: 15px;
+  height:150px;
+  width:100%;
+
+}
+.text
+{
+     color:black;
+      text-align: center;
+      font-size: 20px;
+      /* font-weight: bold; */
+      font-family: 'Montserrat', serif;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  label
+  {
+    margin-bottom: 0px;
+  }
+  radio
+  {
+    padding-left: 0px;
+  }
+  /*third-sec*/
+  .third-sec{
+    background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(157,190,111,1) 56%, rgba(253,187,45,1) 100%);;
+  }
+
+/*fourth -sec*/
+.heading{
+  text-align: center;
+  padding-top: 60px;
+}
+
+.product-men {
+    margin-top: 2em;
+}
+.product-sec1
+{
+  padding:30px 20px;
+}
+.card{
+  border: 1px solid green;
+    padding: 0.5em;
+    border-radius: 10px;
+    min-height:430px;
+
+
+}
+.card-title{
+  text-align:center;
+  padding-top:10px;
+  color:green;
+  font-family: 'poppins',sans-serif;
+  font-weight: 600;
+
+}
+#delivery-date-C0.
+{
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.drop-down{
+  padding-top:10px;
+  padding-left: 13px;
+}
+@media max-width(1160px)
+{
+  #grams
+  {
+    width:120%;
+    padding-left: 5px;
+  }
+  .drop-down{
+    padding-left: 5px;
+
+  }
+}
+
+#grams
+{
+  height:36px;
+  width:100%;
+  border-color: green;
+  border-radius: 2px solid;
+}
+.group{
+  padding-top: 10px;
+}
+.input-group
+{
+  width:100%;
+  height:auto;
+background-color:#28a745;
+  color:white;
+  font-family:'poppins' ,sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+}
+.btn-outline-secondary {
+    color:white;
+    border-color: green;
+
+}
+
+
+.row{
+  padding:0px 10px;
+
+}
+.rate{
+  padding-top: 10px;
+  text-align:center;
+  color:red;
+  font-size:18px;
+  font-family: "Montserrat",sans-serif;
+  font-weight:400;
+}
+.calender{
+  text-align: center;
+}
+.button{
+  text-align: center;
+  padding-top: 10px;
+
+}
+.button-1{
+  height:40px;
+  width:120px;
+}
+/*fourth-sec*/
+.fourth-sec{
+background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+}
+.product-sec1.product-sec2 {
+
+
+}
+.effect-bg {
+    margin-top: 40px;
+    text-align: left;
+}
+.style
+{
+  padding-top: 20px;
+  font-family: "Montserrat",san-serif;
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+.bg-right-nut
+{
+  padding-top: 30px;
+}
+.fiv-sec{
+  background-color:white;
+
+}
+/*sixth-sec*/
+.six-sec{
+  background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+}
+.sev-sec
+{
+  background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(157,190,111,1) 56%, rgba(253,187,45,1) 100%);
+}
+/* footer section */
+.footer-sec {
+  background-color: Black;
+  color: white;
+}
+
+.footer {
+  padding: 30px;
+  text-align: left;
+}
+
+#div-row {
+  padding-top: 30px;
+}
+
+.contact {
+  text-align: left;
+  color: orange;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+#text-link a:hover {
+  color: orange;
+}
+
+#icon {
+  vertical-align: middle;
+}
+
+.sub-info {
+  padding-top: 5px;
+  text-align: left;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.list-line {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.sub-info1 {
+  padding-top: 0px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.no {
+  color: white;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+a:hover {
+  color: orange;
+  background: none;
+  color: inherit
+}
+
+.links a:hover {
+  color: orange;
+}
+
+.center {
+  padding-left: 80px;
+}
+
+.card1 {
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 330px;
+  width: 280px;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.input-container {
+  border-radius: 50%;
+  padding-top: 5px;
+  color: orange;
+}
+
+.label {
+  padding-left: 5px;
+  margin-bottom: 0px;
+}
+
+.txt {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: lighter;
+  padding-bottom: 0px;
+}
+
+.input-field {
+  padding-top: 10px;
+  height: 25px;
+  width: 90%;
+}
+
+.abt-us:link, .abt-us:visited {
+  background-color: Orange;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+.abt-us:hover, .abt-us:active {
+  background-color: #F7CE68;
+  ;
+}
+
+.social {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.soc-icon {
+  margin: 20px 10px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+.soc-icon:hover {
+  color: orange;
+}
